@@ -1,0 +1,109 @@
+version: "3.9"
+
+networks:
+  sop-network:
+    driver: bridge
+
+volumes:
+  storage-data:
+  presentation-output:
+
+services:
+  # ────────────────────────────────────────────────
+  # 1. INGESTION SERVICE
+  # ────────────────────────────────────────────────
+  ingestion:
+    build: ./services/ingestion
+    container_name: sop-ingestion
+    ports:
+      - "8001:8001"
+    networks:
+      - sop-network
+    restart: unless-stopped
+    environment:
+      - SERVICE_NAME=ingestion
+
+  # ────────────────────────────────────────────────
+  # 2. AI PROCESSING SERVICE
+  # ────────────────────────────────────────────────
+  ai-processor:
+    build: ./services/ai_processor
+    container_name: sop-ai-processor
+    ports:
+      - "8002:8002"
+    networks:
+      - sop-network
+    restart: unless-stopped
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - SERVICE_NAME=ai-processor
+
+  # ────────────────────────────────────────────────
+  # 3. PRESENTATION SERVICE
+  # ────────────────────────────────────────────────
+  presentation:
+    build: ./services/presentation
+    container_name: sop-presentation
+    ports:
+      - "8003:8003"
+    volumes:
+      - presentation-output:/app/output
+    networks:
+      - sop-network
+    restart: unless-stopped
+    environment:
+      - SERVICE_NAME=presentation
+
+  # ────────────────────────────────────────────────
+  # 4. STORAGE SERVICE
+  # ────────────────────────────────────────────────
+  storage:
+    build: ./services/storage
+    container_name: sop-storage
+    ports:
+      - "8004:8004"
+    volumes:
+      - storage-data:/app/data
+    networks:
+      - sop-network
+    restart: unless-stopped
+    environment:
+      - SERVICE_NAME=storage
+      - DATABASE_URL=sqlite+aiosqlite:////app/data/sop_storage.db
+
+  # ────────────────────────────────────────────────
+  # 5. API GATEWAY
+  # ────────────────────────────────────────────────
+  gateway:
+    build: ./services/gateway
+    container_name: sop-gateway
+    ports:
+      - "8000:8000"
+    networks:
+      - sop-network
+    depends_on:
+      - ingestion
+      - ai-processor
+      - presentation
+      - storage
+    restart: unless-stopped
+    environment:
+      - SERVICE_NAME=gateway
+      - INGESTION_URL=http://ingestion:8001
+      - AI_PROCESSOR_URL=http://ai-processor:8002
+      - PRESENTATION_URL=http://presentation:8003
+      - STORAGE_URL=http://storage:8004
+
+  # ────────────────────────────────────────────────
+  # 6. FRONTEND
+  # ────────────────────────────────────────────────
+  frontend:
+    build: ./frontend
+    container_name: sop-frontend
+    ports:
+      - "3000:80"
+    networks:
+      - sop-network
+    depends_on:
+      - gateway
+    restart: unless-stopped

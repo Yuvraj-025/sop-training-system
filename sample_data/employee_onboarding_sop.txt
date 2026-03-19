@@ -1,0 +1,192 @@
+STANDARD OPERATING PROCEDURE (SOP)
+Document Title: Employee Onboarding Process
+Document ID: HR-SOP-001
+Version: 2.1
+Effective Date: January 1, 2024
+Department: Human Resources
+Approved By: VP of Human Resources
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. PURPOSE
+
+This Standard Operating Procedure (SOP) defines the standardized process for onboarding new employees at the company. The purpose is to ensure that every new hire receives a consistent, comprehensive, and welcoming introduction to the organization, its culture, tools, and role-specific responsibilities.
+
+A well-executed onboarding process reduces time-to-productivity, improves employee retention, and ensures compliance with company policies and legal requirements.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. SCOPE
+
+This SOP applies to:
+- All full-time and part-time employees joining the organization
+- Remote and on-site employees
+- HR Business Partners, Department Managers, IT Support, and Payroll teams involved in the onboarding process
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+3. RESPONSIBILITIES
+
+3.1 Human Resources (HR)
+- Coordinate and oversee the entire onboarding process
+- Prepare and send offer letters, contracts, and pre-joining documentation
+- Schedule orientation sessions
+- Maintain onboarding records for audit and compliance
+
+3.2 IT Department
+- Set up hardware (laptop, phone, access cards)
+- Create user accounts, email IDs, and system access credentials
+- Install required software and VPN access
+- Provide IT orientation and helpdesk introduction
+
+3.3 Hiring Manager / Department Head
+- Prepare a 30-60-90 day onboarding plan for the new employee
+- Assign a buddy or mentor from the team
+- Schedule 1:1 meetings for the first two weeks
+- Conduct role-specific training and project briefings
+
+3.4 Payroll / Finance
+- Set up employee records in the payroll system
+- Collect and verify tax and banking information
+- Ensure first payroll cycle is accurate
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+4. PRE-JOINING PROCESS (Before Day 1)
+
+Step 1: Send Offer Letter and Documentation (T-14 days)
+- HR sends the signed offer letter via email
+- Attach: employment contract, NDA, background check consent form
+- Request: PAN card, Aadhaar (or equivalent), educational certificates, previous employment records
+
+Step 2: Background Verification (T-7 days)
+- Initiate background verification with the third-party vendor (BGV team)
+- Verify: Identity, Address, Education, Previous Employment
+- Flag any discrepancies to the hiring manager immediately
+- Compliance Note: All offers are conditional until BGV clearance
+
+Step 3: IT Setup Request (T-5 days)
+- HR raises IT ticket using ServiceNow with new hire details
+- Specify: laptop model preference, software licenses needed, system access level
+- IT confirms setup availability 2 business days before joining
+
+Step 4: Welcome Email (T-2 days)
+- HR sends personalized welcome email with:
+  - Office address / remote work instructions
+  - Day 1 schedule and reporting time
+  - Dress code and parking/access instructions
+  - Emergency contact number for Day 1 queries
+  - Link to company handbook and culture deck
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+5. DAY 1 ONBOARDING
+
+Step 5: Welcome and Reception (9:00 AM)
+- HR Coordinator receives the new hire at reception
+- Provide access card, company ID badge, and welcome kit
+- Escort to assigned workstation or meeting room
+
+Step 6: HR Orientation (9:30 AM – 11:00 AM)
+- Company overview: Mission, vision, values, org structure
+- HR policies: Leave policy, code of conduct, POSH policy, benefits overview
+- Employee handbook walkthrough
+- Sign off on policy acknowledgment forms
+
+Step 7: IT Onboarding (11:00 AM – 12:00 PM)
+- Handover laptop and peripherals
+- Set up company email, Slack/Teams, and JIRA/project tools
+- Install VPN and walk through security protocols
+- Demonstrate password management and 2FA setup
+
+Step 8: Payroll Documentation (12:00 PM – 12:30 PM)
+- Collect signed bank details and tax declaration forms
+- Add employee to HRMS (e.g., Zoho People / BambooHR)
+- Set up payroll entry for the current or next cycle
+
+Step 9: Department Introduction (2:00 PM – 4:00 PM)
+- Hiring manager introduces the new hire to the team
+- Team lunch or coffee catch-up (virtual or in-person)
+- Buddy/mentor introduction and contact sharing
+- Overview of team goals, current projects, and team norms
+
+Step 10: Role Briefing (4:00 PM – 5:00 PM)
+- Hiring manager shares 30-60-90 day plan
+- Role-specific tools and systems walkthrough
+- First week agenda shared via calendar invites
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+6. WEEK 1 ACTIVITIES
+
+- Daily 15-minute check-in with buddy/mentor
+- Complete all mandatory training modules on the LMS by Day 5:
+  - Information Security Awareness
+  - POSH (Prevention of Sexual Harassment)
+  - Data Privacy and GDPR Basics
+  - Company Values and Culture Course
+- Attend all relevant team standups and meetings (shadowing mode)
+- Complete HR forms and submit any remaining documentation
+- Set up first 1:1 with direct manager by Day 3
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+7. 30-60-90 DAY MILESTONES
+
+Day 30:
+- Complete all mandatory trainings
+- Understand team structure and immediate project scope
+- Have met all key stakeholders in department
+- Manager conducts 30-day check-in meeting
+
+Day 60:
+- Begin contributing independently to at least one project
+- Deep-dive into 2-3 core tools/processes of the role
+- Share feedback on onboarding experience via pulse survey
+- Manager review: Is the employee on track? Are there gap areas?
+
+Day 90:
+- Fully integrated into team workflows
+- Goals for the next quarter set in performance management system
+- Formal feedback session with manager
+- HR conducts probation review meeting
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+8. COMPLIANCE AND REGULATORY REQUIREMENTS
+
+8.1 Data Privacy
+- All personal data collected during onboarding must be stored securely in the HRMS
+- Access is restricted to HR, IT, and Payroll only
+- Data retention policy: 7 years post-employment for statutory compliance
+
+8.2 Mandatory Trainings
+- POSH training must be completed within 7 days of joining (as per The Sexual Harassment of Women at Workplace Act, 2013)
+- Information Security training must be completed within 5 days (as per company ISO 27001 policy)
+- Non-completion must be escalated to the HR Head
+
+8.3 Background Verification
+- All onboarding offers are conditional on BGV clearance
+- Adverse BGV results must be reviewed by Legal and HR before any action
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+9. ESCALATION MATRIX
+
+| Issue                        | Escalate To             |
+|------------------------------|-------------------------|
+| BGV discrepancy              | Legal + HR Head         |
+| IT setup not ready           | IT Manager              |
+| Payroll delay                | Finance Head            |
+| Employee concern (Day 1-7)   | HR Business Partner     |
+| Policy violation             | HR Head + Legal         |
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+10. REVIEW AND VERSION CONTROL
+
+This document is reviewed every 6 months or when there are significant changes in compliance requirements, tools, or company structure.
+
+Last Reviewed: December 2023
+Next Review Due: June 2024
+Document Owner: HR Operations Team
