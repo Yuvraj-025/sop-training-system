@@ -19,19 +19,6 @@
 ## 🏗️ Architecture
 
 ![Architecture Diagram](images/architecture.png)
-```
-┌──────────────────────────────────────────────────┐
-│             React Frontend  :3000               │
-└─────────────────────┬────────────────────────────┘
-                      │
-┌─────────────────────▼────────────────────────────┐
-│         API Gateway (FastAPI)  :8000            │
-└──┬────────────┬─────────────┬───────────────────┘
-   │            │             │             │
-:8001        :8002         :8003         :8004
-Ingestion   AI Processor  Presentation  Storage
-Service     (Gemini)      (python-pptx) (SQLite)
-```
 
 ### Services
 
