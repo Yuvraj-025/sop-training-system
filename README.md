@@ -1,12 +1,24 @@
-# SOP → AI Training System
+<div align="center">
+  
+# 🧠 SOP → AI Training System
+
+![Python FastAPI](https://img.shields.io/badge/Python_FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![React Vite](https://img.shields.io/badge/React_Vite-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker_Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
 > **AI-Powered SOP to Training Package Converter**  
-> Microservice architecture · FastAPI · Google Gemini · React · Docker
+
+</div>
+
+**SOP Training System** is a full-stack, AI-powered application designed to automate employee onboarding and training. By simply uploading any Standard Operating Procedure (SOP) document (PDF or TXT), the system leverages Google's Gemini AI to instantly generate a comprehensive summary, step-by-step training modules, interactive quiz questions, and a downloadable PowerPoint (.pptx) presentation. Built with a scalable microservices architecture, it seamlessly orchestrates document processing, AI generation, and secure storage to streamline organizational training.
 
 ---
 
 ## 🏗️ Architecture
 
+![Architecture Diagram](images/architecture.png)
 ```
 ┌──────────────────────────────────────────────────┐
 │             React Frontend  :3000               │
@@ -43,7 +55,7 @@ Service     (Gemini)      (python-pptx) (SQLite)
 ### 2. Configure Environment
 
 ```bash
-cd y:\Nutrabay\sop-training-system
+cd y:\Folder_name\sop-training-system
 copy .env.example .env
 # Edit .env and add your GEMINI_API_KEY
 ```
@@ -59,6 +71,16 @@ Wait ~60 seconds for all services to start, then open:
 - **Frontend UI**: http://localhost:3000
 - **Gateway API**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/api/health
+
+### Output Preview
+![Frontend UI](images/frontend.png)
+![Frontend UI - Upload](images/frontend2.png)
+![Frontend UI - Summary](images/summary.png)
+![Frontend UI - Training Modules](images/training_data.png)
+![Frontend UI - Quiz](images/quiz.png)
+![Generated Presentation](images/ppt.png)
+
+*(Note: A sample generated PowerPoint (.pptx) file is also attached to this repository so you can see the final output!)*
 
 ### 4. Test the System
 
@@ -177,7 +199,7 @@ sop-training-system/
 
 ---
 
-## 🤖 AI Output Format
+## Output Format
 
 The AI Processor returns a structured JSON package with three sections:
 
@@ -225,4 +247,4 @@ The AI Processor returns a structured JSON package with three sections:
 
 ---
 
-*Built for AI Automation Intern Assessment — Problem 4 (Advanced)*
+**Made by Yuvraj Singh**
