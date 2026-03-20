@@ -59,6 +59,9 @@ Wait ~60 seconds for all services to start, then open:
 - **Gateway API**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/api/health
 
+### Demo - 
+[Watch Video](demo_video.mp4)
+
 ### Output Preview
 ![Frontend UI](images/frontend.png)
 ![Frontend UI - Upload](images/frontend2.png)
